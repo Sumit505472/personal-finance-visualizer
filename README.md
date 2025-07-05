@@ -1,30 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Finance Visualizer
 
-## Getting Started
+A personal finance tracking application built with Next.js, allowing users to add, view, and delete financial transactions, and visualize their spending data.
 
-First, run the development server:
+
+
+## Features
+
+-   **Transaction Management:**
+    -   Add new transactions with amount, description, date, type (income/expense), and category.
+    -   View a list of all recorded transactions.
+    -   Delete individual transactions.
+-   **Data Storage:** Transactions are persistently stored in a MongoDB Atlas database.
+-   **Basic Data Visualization:**
+    -   Displays a basic bar chart of transaction amounts (currently daily sums, will be enhanced for monthly expenses).
+-   **Modern UI:**
+    -   Responsive design using Tailwind CSS.
+    -   Interactive components (e.g., date picker, select dropdowns) powered by `shadcn/ui`.
+
+## Current Status
+
+The core transaction management features (Add, View, Delete) are fully functional. Basic data visualization has been integrated, with further enhancements planned for a specific "Monthly Expenses Bar Chart."
+
+**Completed:**
+-   **Phase 1: Basic Transaction Tracking**
+    -   Add/Delete transactions (amount, date, description, type, category).
+    -   Transaction list view.
+    -   Basic form validation.
+-   **Phase 2: Data Visualization (Initial)**
+    -   Integration of Recharts.
+    -   Display of a bar chart summarizing transaction amounts by date.
+-   **UI/UX Refinements:**
+    -   Enhanced date picker.
+    -   Improved overall page layout, spacing, and card styling.
+
+**To be enhanced/added:**
+-   **Edit Transaction functionality.**
+-   **Chart refinement:** Specifically aggregate and display monthly expenses only.
+-   More advanced data visualizations (e.g., spending by category, income trends).
+-   User authentication and multi-user support.
+-   Advanced UI/UX improvements.
+
+## Technologies Used
+
+-   **Frontend:**
+    -   [Next.js](https://nextjs.org/) (React Framework)
+    -   [Tailwind CSS](https://tailwindcss.com/) (Styling)
+    -   [shadcn/ui](https://ui.shadcn.com/) (UI Components built on Radix UI & Tailwind CSS)
+    -   [Recharts](https://recharts.org/en-US/) (Data Visualization Library)
+    -   [Lucide React](https://lucide.dev/) (Icons)
+    -   [date-fns](https://date-fns.org/) (Date utility library)
+-   **Backend:**
+    -   Next.js API Routes
+    -   [Mongoose](https://mongoosejs.com/) (MongoDB Object Data Modeling - ODM)
+    -   [MongoDB Atlas](https://www.mongodb.com/atlas) (Cloud Database)
+
+## Setup and Installation
+
+Follow these steps to get the project up and running on your local machine.
+
+### Prerequisites
+
+-   Node.js (LTS version recommended)
+-   npm or Yarn
+-   A MongoDB Atlas account (free tier is sufficient)
+
+### 1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+git clone <your-repository-url> # Replace with your actual repository URL if using Git
+cd personal-finance-visualizer
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
