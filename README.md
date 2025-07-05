@@ -69,9 +69,15 @@ Follow these steps to get the project up and running on your local machine.
 ```bash
 git clone <your-repository-url> # Replace with your actual repository URL if using Git
 cd personal-finance-visualizer
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📦 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+
+
 
 ## Deploy on Vercel
 
